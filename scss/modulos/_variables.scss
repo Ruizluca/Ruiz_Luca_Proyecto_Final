@@ -42,6 +42,7 @@ $paleta_colores: (
 
 // Media Queris//
 
+
 @mixin mobile {
     @media screen and ( max-width: 576px) {
         @content;
