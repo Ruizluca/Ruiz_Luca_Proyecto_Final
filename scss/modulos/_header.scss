@@ -1,0 +1,18 @@
+@import "./variables";
+
+img{
+    width: 100%;
+}
+
+#container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+nav {
+    margin:  $nav-header 20px;
+}
+
+a{
+margin:$nav-header-a 10px;
+}

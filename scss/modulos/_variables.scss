@@ -1,0 +1,64 @@
+
+//header//
+
+$nav-header: 20px;
+$nav-header-a: 10px;
+
+//main//
+
+$paleta_colores: (
+    "oscuro": #050b44,
+    "blanco": white,
+    "negro": black,
+    "azul": rgb(49, 49, 185),
+    
+);
+
+@mixin flex ($justify, $align,){
+    display: flex;
+    justify-content: center;
+    text-align: center ;
+};
+
+@mixin flexbox ($justify, $align,){
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+};
+
+//footer//
+
+@mixin medida ($width, $height, $right, $top,){
+    width: 100px;
+    height: 100px;
+    right: 0%;
+    top: 400px;
+}
+
+@mixin medidas-logos ($width, $height,){
+    width: 100px;
+    height: 100px;
+}
+
+// Media Queris//
+
+@mixin mobile {
+    @media screen and ( max-width: 576px) {
+        @content;
+        
+    }
+}
+
+@mixin tablet {
+    @media screen and ( max-width: 768px) {
+        @content;
+        
+    }
+}
+@mixin mobile-two {
+    @media screen and (min-width: 320px) and (max-width:414px) {
+        @content;
+    
+    }
+}
+

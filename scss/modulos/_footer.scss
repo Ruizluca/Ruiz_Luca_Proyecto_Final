@@ -1,0 +1,45 @@
+@import "./variables";
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+    border-top: 3px solid black;
+    @include mobile-two{
+        flex-wrap:wrap-reverse;
+        justify-content:center;
+        
+    }
+    }
+    
+    footer ul li a{
+        font-size: 1rem;
+        color: map-get($paleta_colores, "azul" );
+    }
+    
+
+    
+    #cajauno{
+  @include medida (width, height, right, top,)
+    }
+    #cajauno img{
+        @include medidas-logos (width, height,);
+
+        @include mobile-two{
+      
+        }
+       
+    }
+    #cajados{
+ @include medida (width, height, right, top,)
+    }
+    #cajados img{
+@include medidas-logos (width, height,);
+
+@include mobile-two{
+
+}
+    }
+
